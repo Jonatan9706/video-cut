@@ -6,11 +6,11 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 # URL do vídeo do YouTube
-video_url = 'https://www.youtube.com/watch?v=6veQB79A0T8'
+video_url = input("Cole a URL do vídeo:")
 
 # Tempo de início e fim para cortar (em segundos)
-start_time = 120
-end_time = 180
+start_time = int(input("Digite o segundo inicial: "))
+end_time = int(input("Digite o segundo final:"))
 
 # Baixar o vídeo do YouTube
 yt = YouTube(video_url)
